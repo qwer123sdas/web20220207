@@ -1,0 +1,5 @@
+
+git(=vcs : 버전관리 프로그램=version control system)
+git에서 버전관리를 한 이후에 git이 github에 올리는 것 
+
+github(=클라우드 저장소) 
