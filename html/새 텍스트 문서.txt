@@ -1,5 +1,30 @@
 
 git(=vcs : 버전관리 프로그램=version control system)
 git에서 버전관리를 한 이후에 git이 github에 올리는 것 
+*git을 terminal = shell = command line interface(CLI)라고도 함.
+~/Desktop/work .... : 유저 폴더.
+$ pwd : 현재 경로표시
+$ ls : 현재 경로에 있는 파일 나열
+$ ls -al : 상위, 하위 폴더 나열
 
+$git init : git이 관리하는 폴더가 됨. 그래서 이후에 ls -al을 하면 .git이라는 숨겨진 파일이 생성된 걸 볼 수 있음.
+
+$clear : 화면 정리-> git init를 했다면 (master)이라는 표시 경로가 생기며 git이 관리함을 알게 됨.
+
+$git status : 현재 상태를 보여줌.
 github(=클라우드 저장소) 
+
+$git add . : 
+
+
+* commit커밋 : 현재 순간을 저장
+$git commit
+
+git repository(repo)를 git hub에 올릴 것.
+
+https://github.com/sebaek
+
+git add
+git commit -m '~'
+git push
+를 통해서 내가 수정한 내용을 gitghub에 수정하여 새로 올라가는 게 가능해짐.
