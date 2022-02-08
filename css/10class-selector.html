@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            background-color: rgb(211, 253, 253);
+        }
+        #head1{
+            color: red;
+        }
+        .note{
+            color: darkblue;
+        }
+
+        .error{
+            text-decoration: line-through;
+        }
+        .special{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1#head>lorem3 -->
+    <h1 id="head">Lorem, ipsum dolor.</h1>
+    <!-- h1#head$*10>lorem3 -->
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Laudantium, asperiores perspiciatis.</h1>
+    <h1 id="head3" class="note error">Possimus, voluptatum neque?</h1>
+    <h1 id="head4" class="error">Laboriosam, porro aperiam.</h1>
+    <h1 id="head5" class="special">Illo, sit magnam?</h1>
+    <h1 id="head6">Voluptatum, consectetur tenetur?</h1>
+    <h1 id="head7">Voluptates, porro aut!</h1>
+    <h1 id="head8">Consectetur, aliquam dolor?</h1>
+    <h1 id="head9" class="special">Perspiciatis, sunt non.</h1>
+    <h1 id="head10" class="note">Autem, repellendus dolor!</h1>
+
+    <hr>
+    <p>class attribute 작성 시 주의할 점</p>
+    <p>대소문자 구분됨 </p>
+    <p>사용할 수 있는 문지 : 영문대소문자, 숫자, -, _</p>
+
+    <p>여러 요소가 같은 class값을 가질 수 잇음</p>
+    <p>하나의 요소가 여러 class의 값을 가질 수 있음(class값은  space로 구분함)</p>
+    <!-- h1.special.note>lorem5 -->
+    <h1 class="special note">Lorem ipsum dolor sit amet.</h1>
+</body>
+</html>

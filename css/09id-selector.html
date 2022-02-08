@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            color: blueviolet;
+        }
+
+        #myhead1{
+            background-color: brown;
+        }
+
+        #myhead2{
+            background-color: blue;
+        }
+
+        #myhead3{
+            background-color: red;
+        }
+        #myhead4{
+            background-color: grey;
+        }
+        #myhead5{
+            background-color: rgb(75, 53, 53);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 id="myhead1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, illo?</h1>
+    <h1 id="myhead2">Sed iste et rerum asperiores fugit minima iusto dicta quae.</h1>
+    <h1 id="myhead3">Repudiandae tempora aspernatur aut alias veniam quod pariatur autem perspiciatis.</h1>
+    <h1>Qui quisquam voluptates esse labore reprehenderit quos, repellendus corrupti consectetur.</h1>
+    <h1>Consectetur voluptatum voluptates quas libero maiores facere esse, commodi nisi!</h1>
+    <h1>Sunt corrupti nostrum illum cupiditate tempora molestias obcaecati quaerat quia!</h1>
+
+
+    <hr>
+
+    <h1>id attribute를 작성할 때 주의점</h1>
+    <p>한 문서에 같은 id값을 갖는 요소가 존재하면 안됨.</p>
+<!-- 예시 -->
+    <h1 id="myhead4">Lorem, ipsum dolor.</h1>
+    <h1 id="myhead4">Consectetur, soluta vero.</h1>
+    <p>즉 위 코드는 잘못된 코드이다.</p>
+    <br>
+    <p>그리고 id의 값은 대소문자 구분됨</p>
+    <h1 id="myhead5">Lorem, ipsum dolor.</h1>
+    <h1 id="myHead5">Lorem, ipsum dolor.</h1>
+
+    <hr>
+    <p>id값에 사용할 수 있는 문자 : 영문대소문자, 숫자 ,-, _ </p>
+    <p>또한 문자로 먼저 시작해야함</p>
+    <p>아래처럼 쓰면 안됨</p>
+    <!-- <h1 id="6head">Lorem, ipsum dolor.</h1> -->
+    <!-- <h1 id="7, head">Sequi, commodi modi.</h1> -->
+    <p>id값은 하나의 요소가 여러개 가질 수 없음</p>
+    <p>아래처럼 쓰면 안됨</p>
+    <h1 id="myhead8" id="myhead9">Lorem, ipsum dolor.</h1>
+    <h1 id="myhead8 myhead9">Facere, ex commodi!</h1>
+    <h1 id="myhead10,myhead11">Eum, molestiae! Nulla.</h1>
+</body>
+</html>
