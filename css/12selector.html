@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .note{
+            color:blue
+        }
+        .error{
+            color: red;
+        }
+        .note.error{
+            color: gold;
+        }
+        #head3{
+            color: brown;
+
+        }
+        h1#head4.note{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1#head$.note*2>lorem3 -->
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Error, repellat culpa.</h1>
+
+    <!-- h1#head$@3.note.error*2>lorem3 -->
+    <h1 id="head3" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 id="head4" class="note error">Sit, id fugiat.</h1>
+</body>
+</html>
