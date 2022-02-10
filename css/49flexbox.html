@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .item {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .item:nth-child(odd) {
+            background-color: gold;
+            color: deeppink;
+
+        }
+
+        .item:nth-child(even) {
+            background-color: indigo;
+            color: white;
+        }
+        .box{
+            display: flex;
+            height: 300px;
+            /* flex값을 가지고 있는 애들은 가장 많은 높이값을 가지고 가로로 배치된다. */
+        }
+        .menu-container{
+            display: flex;
+            background-color: #222;
+            width: auto;
+
+
+        }
+        .menu_item{
+            color: #999;
+            border: 3px solid #999;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 7px 15px;
+            box-sizing: border-box;
+            
+
+        }
+        .menu_item:hover{
+            background-color: #999;
+            color: black;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- #ex$.item*5{$} -->
+        <div id="ex1" class="item">1</div>
+        <div id="ex2" class="item">2</div>
+        <div id="ex3" class="item">3</div>
+        <div id="ex4" class="item">4</div>
+        <div id="ex5" class="item">5</div>
+    </div>
+
+    <hr>
+    <!-- .menu-container>.menu_item*5>lorem1 -->
+    <div class="menu-container">    <!-- flex container-->
+        <div class="menu_item">Lorem.</div> <!-- flex item-->
+        <div class="menu_item">Iusto.</div>
+        <div class="menu_item">Aliquid.</div>
+        <div class="menu_item">Nobis.</div>
+        <div class="menu_item">Ex.</div>
+    </div>
+</body>
+
+</html>
