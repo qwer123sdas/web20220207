@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .sub{
+        display:none;
+        position: absolute;
+        top:-5px;
+        left: 118px;
+        background-color: black;
+        color:white;
+    }
+    ul{
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+    }
+    .sub>li{
+        width: 120px;
+        padding: 3px;
+        margin: 0px;
+    }
+    .main>li{
+        width: 120px;
+        position: relative;
+        padding: 15px;
+        margin: 0px;
+        background-color: black;
+        color: white;
+        box-sizing: border-box;
+        border: 5px solid black;
+    }
+    .main>li:hover{
+        border-right:5px solid yellow;
+    }
+    .main> li:hover>.sub{
+        display: block;
+    }
+</style>
+</head>
+<body>
+    <!-- ul.main>li*5>lorem1+ul.sub>li*3>lorem1 -->
+    <ul class="main">
+        <li>
+            Lorem.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Dolorem!</li>
+                <li>Aut?</li>
+            </ul>
+        </li>
+        <li>
+            Officiis?
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Tenetur.</li>
+                <li>Saepe?</li>
+            </ul>
+        </li>
+        <li>
+            In.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Veritatis?</li>
+                <li>Odit!</li>
+            </ul>
+        </li>
+        <li>
+            Nesciunt.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Rerum.</li>
+                <li>Enim.</li>
+            </ul>
+        </li>
+        <li>
+            Expedita.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Quia?</li>
+                <li>Modi!</li>
+            </ul>
+        </li>
+    </ul>
+
+    ul.main>li*5>lorem1>ul.sub>li*3>lorem1
+</body>
+</html>
