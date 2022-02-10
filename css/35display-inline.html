@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    a{
+        border : 2px solid black;
+    }
+    .container>span{
+        width: 10px;
+        height: 100px;
+        margin: 20px;
+        padding: 15px;
+    }
+</style>
+</head>
+<body>
+    <!-- a*3>lorem2 -->
+    <a href="">Lorem, ipsum.</a><a href="">Sequi, adipisci?</a><a href="">Quia, earum.</a>
+
+    <hr>
+
+    <!-- img*2 -->
+    <img src="../html/raccoon.jpg" alt="">
+    <img src="../html/tokyo.png" alt="">
+    <!-- ../ 을 사용하면 다른 폴더의 데이터 사용 가능 -->
+<hr>
+
+    <!-- span*3>lorem2 -->
+    <span>Lorem, ipsum.</span>
+    <span>Id, adipisci.</span>
+    <span>Nobis, distinctio?</span>
+    <!-- span element는 inline element라서 새로운 줄에 배치되지 않음 -->
+
+    <hr>
+    <span>Lorem, ipsum.</span><span>Qui, ex.</span><span>Quod, dicta?</span>
+    <!--span의 경우 엔터는 space처리를 하게 됨.-->
+
+    <hr>
+
+    <!-- .container -->
+    <!-- 왜냐하면 div를 많이 쓰므로 div를 안써도 자동으로 나타남 -->
+    <div class="container">
+        <!-- span*3>lorem2 -->
+        <span>Lorem, ipsum.</span><span>At, aperiam!</span><span>Dolore, delectus?</span>
+    </div>
+    <p>inline요소는 width, height, padding, margin 4가지가 의도한 대로 적용되지 않음.</p>
+
+    
+
+</body>
+</html>
