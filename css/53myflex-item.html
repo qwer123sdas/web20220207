@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>w3school 뼈대 만들기</title>
+
+    <style>
+        .title, .navi {
+            display: flex;
+            justify-content:space-between;
+        }
+
+        .left-title, .right-title {
+            display: flex;
+            align-items: center;
+        }
+        .left-title>p{
+            padding: 30px 20px;
+            font-size: 20px;
+            justify-content: flex-start;
+            background-color: aqua;
+        }
+        .right-title>p{
+            padding: 30px 20px;
+            font-size: 20px;
+            justify-content: flex-end;
+            background-color: blue;
+            position:sticky;
+        }
+
+        /* navi */
+        .navi{
+            background-color: black;
+            color: white;
+            margin: 0px;
+            
+            
+
+        }
+        .left-navi, .right-navi{
+            display: flex;
+            align-items: center;
+        }
+        .left-navi>p{
+
+            border: 10px solid black;
+            font-size: 20px;
+            justify-content: flex-start;
+            
+        }
+       .left-navi-menu:hover{
+            background-color: gray;
+        }
+
+        .right-navi>p{
+            padding: 30px 20px;
+            font-size: 20px;
+            justify-content: flex-end;
+            background-color: blue;
+            position:sticky;
+        }
+        /* body */
+        .body-container{
+            display: flex;
+        }
+        .left-body{
+            flex: 1;
+            background-color: gold;
+            text-align: center;
+            
+        }
+        .middle-body{
+            flex:7;
+        }
+        .right-body{
+            flex: 1;
+            background-color: aqua;
+        }
+        
+        .box1{
+            background-color: rgb(172, 102, 238);
+        }
+        .title-button{
+            border-radius: 30px;
+            height: 30px;
+            a
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- title -->
+    <div class="title">
+        <div class="left-title">
+            <img src="../html/tokyo.png" alt="" width="100px" height="100px">
+            <p>Tutorials</p>
+            <p>References</p>
+            <p>Exercises</p>
+            <p>Videos</p>
+        </div>
+        <div class="right-title">
+            <button class="title-button">Wensite NEW</button>
+            <button class="title-button">Paid Coursed</button>
+            <button class="title-button">Log in</button>
+        </div>
+
+    </div>
+<!-- navi -->
+    <div class="navi">
+        <div class="left-navi">
+           
+            <p class="left-navi-menu">Html</p>
+            <p class="left-navi-menu">Css</p>
+            <p class="left-navi-menu">Javascript</p>
+            <p class="left-navi-menu">SQl</p>
+            <p class="left-navi-menu">python</p>
+            <p class="left-navi-menu">php</p>
+            <p class="left-navi-menu">bootstrap</p>
+            <p class="left-navi-menu">how to</p>
+            <p class="left-navi-menu">w3.css</p>
+            <p class="left-navi-menu">java</p>
+            <p class="left-navi-menu">jquery</p>
+            <p class="left-navi-menu">C++</p>
+            <p class="left-navi-menu">C#</p>
+            <p class="left-navi-menu">R</p>
+            <p class="left-navi-menu">react</p>
+            <p class="left-navi-menu">kotlin</p>
+        </div>
+        <div class="right-navi">
+            <p>A</p>
+            <p>B</p>
+            <p>C</p>
+        </div>
+    </div>
+    
+    
+    <div class="body-container">
+    <!-- body왼쪽 끝 -->
+        <div class="left-body">
+            <p>CSS1</p>
+            <p>CSS2</p>
+            <p>CSS3</p>
+            <p>CSS4</p>
+            <p>CSS5</p>
+            <p>CSS6</p>
+            <p>CSS7</p>
+            <p>CSS8</p>
+            <p>CSS9</p>
+            <p>CSS10</p>
+            <p>CSS11</p>
+            <p>CSS12</p>
+            <p>CSS13</p>
+            <p>CSS14</p>
+            <p>CSS15</p>
+            <p>CSS16</p>
+            <p>CSS17</p>
+            <p>CSS18</p>
+            <p>CSS19</p>
+            <p>CSS20</p>
+            <p>CSS21</p>
+            <p>CSS22</p>
+            <p>CSS23</p>
+            <p>CSS24</p>
+            <p>CSS25</p>
+            <p>CSS26</p>
+            <p>CSS27</p>
+            <p>CSS28</p>
+            <p>CSS29</p>
+            <p>CSS30</p>
+        </div>
+    <!-- body중앙 -->
+        <div class="middle-body" style="background-color: blueviolet;">
+            <h1>CSS Tutorial</h1>
+            <button>Home</button>
+            <p class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta incidunt non nihil corrupti quidem optio debitis eos, consequatur cumque illum eum ab, neque ut iure illo fugiat accusantium facere!.
+                <br><button>CSS NEW</button>
+            </p>
+            <h1>Examples in Each Chapter</h1>
+            <p></p>This CSS tutorial contains hundreds of CSS examples.</p>
+
+            <p>With our online editor, you can edit the CSS, and click on a button to view the result./p>
+
+            
+
+        </div>
+    <!-- body오른쪽 끝 -->
+        <div class="right-body">
+            <img src="../html/raccoon.jpg" alt="" width="200px" height="auto">
+            
+        </div>
+</div>
+
+
+</body>
+
+</html>
