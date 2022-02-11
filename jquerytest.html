@@ -16,6 +16,7 @@
     
     <script>
 
+<<<<<<< Updated upstream
         // 카드부분 show, hide하는 부분
     $(document).ready(function() {
         function open_update(){
@@ -28,6 +29,24 @@
             }
         }
     }
+=======
+// 카드부분 show, hide하는 부분
+      $(document).ready(function() {
+                    $("#cards-box").html("");
+                    showArticles();
+                });
+    
+                function open_update()
+                {
+                    let status = $(`#card-update-box`).css('display')
+                    if (status == 'none')
+                    {
+                        console.log(`card-update-box`)
+                        $(`#card-update-box`).show()
+                        $(`#card-body-box`).hide()
+                    }
+                }
+>>>>>>> Stashed changes
 
 
 </script>
@@ -47,10 +66,17 @@
             <button onclick="open_update" type="button" class="btn btn-secondary btn-sm">수정</button>
             <button type="submit" class="btn btn-dark btn-sm" onclick="deleteArticle(1)">삭제</button>
         </div>
+<<<<<<< Updated upstream
         //수정 카드
         <div class="card-update" id="card-update-box-1" style="display:none">
             <div class="form-group col-md-12">
                 <input id="update-title-1" type="text" class="form-control" value="das">
+=======
+        
+        <div class="card-update" id="card-update-box" style="display:none">
+            <div class="form-group col-md">
+                <input id="update-title" type="text" class="form-control" value="첫번째 제목">
+>>>>>>> Stashed changes
             </div>
             <div class="form-group col-md-12">
                 <textarea id="update-comment-1" class="form-control" rows="2">asd</textarea>
