@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .top,.nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .top-left, .top-right, .nav-left, .nav-right{
+            display: flex;
+        }
+
+        .top-menu-item, .nav-menu-item{
+            padding: 10px 20px;
+        }
+       .nav{
+           background-color: black;
+           color: white;
+       }
+
+       .nav-right>.nav-menu-item{
+           font-size: 2em;
+           color: yellow;
+       }
+
+    </style>
+</head>
+<body>
+    <!-- 각 행마다 쪼개야함 -->
+    <!-- .top>.left>.top-menu-item*5{LINK}^.right>.top-menu-item*3{LINK} -->
+    <div class="top">
+        <div class="top-left">
+            <div class="top-menu-item">LINK</div>
+            <div class="top-menu-item">LINK</div>
+            <div class="top-menu-item">LINK</div>
+            <div class="top-menu-item">LINK</div>
+            <div class="top-menu-item">LINK</div>
+        </div>
+        <div class="top-right">
+            <div class="top-menu-item">LINK</div>
+            <div class="top-menu-item">LINK</div>
+            <div class="top-menu-item">LINK</div>
+        </div>
+    </div>
+
+    <!--  -->
+    <!-- .nav>.nav-left>.nav-menu-item*16{LINK}^.nav-menu-item*3{👍}  이모티콘은 window키 + .-->
+    <!-- .nav>.nav-left>.nav-menu-item*16{LINK}^.nav-right>.nav-menu-item{link}*3 -->
+    
+    <div class="nav">
+        <div class="nav-left">
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+            <div class="nav-menu-item">LINK</div>
+        </div>
+            <div class="nav-right">
+            <div class="nav-menu-item"><i class="fa-solid fa-circle-half-stroke"></i></div>
+            <div class="nav-menu-item"><i class="fa-solid fa-earth-americas"></i></div>
+            <div class="nav-menu-item"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+    </div>
+
+
+    <!-- 메인 부분 -->
+    <style>
+        .main-container{
+            display: flex;
+            height: 1200px;
+        }
+        .main-left, .main-right{
+            width: 200px;
+            background-color: gray;
+        }
+        .main-content{
+            flex:1;/*남는 부분을 누가 차지하느냐로써, 1이므로 */
+        }
+
+    </style>
+    <!-- .main-container>.main-left+.main-content+.main-right -->
+    <div class="main-container">
+        <div class="main-left">
+            <!-- .main-left-menu-item*30>lorem1 -->
+            <div class="main-left-menu-item">Lorem.</div>
+            <div class="main-left-menu-item">Odit.</div>
+            <div class="main-left-menu-item">Explicabo!</div>
+            <div class="main-left-menu-item">Soluta.</div>
+            <div class="main-left-menu-item">Ut?</div>
+            <div class="main-left-menu-item">Sed.</div>
+            <div class="main-left-menu-item">Illo.</div>
+            <div class="main-left-menu-item">Placeat!</div>
+            <div class="main-left-menu-item">Et.</div>
+            <div class="main-left-menu-item">Magni.</div>
+            <div class="main-left-menu-item">Nostrum.</div>
+            <div class="main-left-menu-item">Alias.</div>
+            <div class="main-left-menu-item">Ea.</div>
+            <div class="main-left-menu-item">Laboriosam.</div>
+            <div class="main-left-menu-item">Enim?</div>
+            <div class="main-left-menu-item">Inventore.</div>
+            <div class="main-left-menu-item">Qui.</div>
+            <div class="main-left-menu-item">Fuga.</div>
+            <div class="main-left-menu-item">Neque?</div>
+            <div class="main-left-menu-item">Esse.</div>
+            <div class="main-left-menu-item">Iste!</div>
+            <div class="main-left-menu-item">Asperiores!</div>
+            <div class="main-left-menu-item">Quaerat!</div>
+            <div class="main-left-menu-item">Molestias.</div>
+            <div class="main-left-menu-item">Ipsum!</div>
+            <div class="main-left-menu-item">Alias.</div>
+            <div class="main-left-menu-item">Fuga.</div>
+            <div class="main-left-menu-item">Commodi?</div>
+            <div class="main-left-menu-item">Tenetur?</div>
+            <div class="main-left-menu-item">Laborum.</div>
+        </div>
+        <div class="main-content">
+            <!-- h1>lorem3^button*2 -->
+            <h1>
+                Lorem, ipsum dolor.
+            </h1>
+
+            <style>
+                .button-container{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            </style>
+            <div class="button-container">
+                <button>home</button>
+                <button>next</button>
+            </div>
+        </div>
+        <div class="main-right"></div>
+    </div>
+
+</body>
+</html>
