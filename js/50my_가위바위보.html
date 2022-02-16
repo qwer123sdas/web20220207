@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+        integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <!-- .container>.row>.col*3>select#select1>option*3^^.row -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+                <select name="" id="select1">
+                    <option value="1">가위</option>
+                    <option value="2">바위</option>
+                    <option value="3">보</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <!-- .btn#button1.btn-primary{결과보기} -->
+                <div id="button1" class="btn btn-primary">결과보기</div>
+            </div>
+
+
+            <div class="col">
+                <h1>컴퓨터</h1>
+                <p id="computer"></p>
+            </div>
+
+            <div class="row">
+                <!-- h1#result1 -->
+                <h1 id="result1"></h1>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        //   Math.random()은 0보다 크거나 같고 1보다 작은 임의의 수를 리턴한다.
+        // console.log(Math.random());
+        document.getElementById('button1').onclick = function () {
+
+                // function () {
+                //     let scroe = (Math.random()*3)
+                //     if(score<=1){
+                //         console.log("가위")
+                //     }else if(score<=2){
+                //         console.log("바위");
+                //     }else{
+                //         console.log("보");
+                //     }
+                // } 이렇게 하면 안되고 밑에 처럼 해야함.
+                
+            let computer = Math.floor(Math.random() * 3);
+            console.log(computer);
+
+
+
+
+            let p1 = document.querySelector("#select1").value
+
+            if (p1 == score) {
+                document.getElementById("result1").innerText = "비겼습니다."
+            } else if ((p1 == "1") && (score == "3")) {
+                document.getElementById("result1").innerText = "플레이어 1이 이겼습니다."
+            } else if ((p1 == "2") && (score == "2")) {
+                document.getElementById("result1").innerText = "플레이어 1이 이겼습니다."
+            } else if ((p1 == "3") && (score == "1")) {
+                document.getElementById("result1").innerText = "플레이어 1이 이겼습니다."
+            } else {
+                document.getElementById("result1").innerText = "플레이어 2이 이겼습니다."
+            }
+
+
+        }
+
+
+
+            }
+
+
+
+
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
