@@ -45,7 +45,8 @@
         document.getElementById('button4').onclick=function(){
             let num1 = document.getElementById('input1').value;
             let num2 = document.getElementById('input2').value;
-            let numPlus = (num1-0)+(num2-0); 
+            // let numPlus = (num1-0)+(num2-0); 
+            let numPlus = Number(num1)+Number(num2);
             // let numPlus = (num1*0)+(num2*0); 
             document.getElementById('result').innerHTML= numPlus;
         }

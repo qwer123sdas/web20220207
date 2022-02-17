@@ -12,25 +12,34 @@
 </head>
 <body>
     <script>
-        let a = 3;
-        console.log(a);
-        //할당 연산자
-        a += 2; // a = a+2
-        console.log(a); // a = a+2 → a = 5 (오른쪽부터 연산시작)
+        //parameter
+        let a = function(){
+            console.log(1);
+        }   
+        let b = function(){
+            let c = 2; 
+            console.log(c);
+        }
+        let d = function(){
+            let e = 3;
+            console.log(e);
+        }
+        //
+        a();
+        a();
+        b();
+        d();
 
-        a -=3; // a = a-3;
-        console.log(a);  // 5-3 =2
+        //parameter (=매개변수) : 함수 내에서 사용하는 변수이다. 이 변수의 값은 호출 할 때 받는다.
+        let f = function(g){       //여기서는 g를 parameter이라고한다.
+            console.log(g);
+        }
 
-        a *=5 ; // a = a*5 = 2*5
-        console.log(a);  // 10
-        
-        a /= 2;  //a = a/2 = 10/2 =5
-        console.log(a);  //  5
-
-        a %= 2; // a = a%2 = 5%2 = 1
-        console.log(a); //1 
-
-        console.log(2**3 + 2 );
+        f(10); // 이처럼 호출 할 때 10이라는 값을 받아 호출하게 된다.
+        f(50);
+        f(100); // 넘겨준 값을 argument(=인자, 인수)라고 한다. parameter이랑 모호하게 사용된다. 여기서는 100이 argument
+        f("hello");  //js는 문자열도 가능
+        f(true);  // js는 boolean도 가능
     </script>
 <!--js bootscrap 링크-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
