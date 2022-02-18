@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+    
+    <script>
+        //object : {}. 프로퍼티(속성), 메소드를 정의할 수 있따.
+        let obj1 = {
+            aprop : "h1",
+            amethod : function(){
+                console.log(999);
+            }
+        };
+        console.log(obj1.aprop);
+        obj1.amethod();
+        //js에서는 모두가 객체
+
+        //string : "", '' 도 객체이므로 속성과 메소드 둘 다 가짐.
+        //property 사용
+        let str1 = "hello";
+        console.log(str1);
+        console.log(str1.length); // 문자의 갯수(길이) 5
+        
+        let str2 = "javascript";
+        console.log(str2.length); // 10
+
+        let str3 = "010101-100000";
+        console.log(str3.length); // 14
+
+        let str4 = "010-9999-9999"
+        console.log(str4.length); // 13
+
+        // 메소드 사용
+        let str5 = "java";
+        console.log(str5.toUpperCase()); // 함수니까! 호출하니까!
+
+        let str6="IRONMAN";
+        console.log(str6.toLowerCase());
+
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
