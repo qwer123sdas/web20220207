@@ -11,20 +11,46 @@
     </style>
 </head>
 <body>
+    
     <script>
-        let i;
-        console.log(i); //10 왜??
-        for(i=0;i<10;i++){
+        //break키워드는 가장 가까운 loop를 종료시킴.
+        
+        for(let i = 0; i<10; i++){
+            
+            console.log(i);
+
+            break; //0만 출력시킴
+        }
+
+        for(let i=0; i<10; i++){
+            console.log(i);
+
+            if(i==3){
+                break; // 0 1 2 3만 출력시킴
+            }
+        }
+        console.log("");
+        // 0 ~ 4까지 출력하는 코드를 작성
+        // for(let i=0; i<10; i++)을 사용
+        for(let i=0; i<10; i++){
+            console.log(i);
+
+            //코드작성
+            if(i==4){
+                break;
+            }
+        }
+
+        //0~4출력하는데 
+        // for(let i=0; i<10;i++)
+        for(let i=0; i<10;i++){
+            //코드 작성
+            if(i==5){
+                break;
+            }
+
             console.log(i);
         }
-
-
-        for(a=0;a<10;a++){
-            console.log(a);
-        }
-        // console.log(a);  오류발생
-
-
     </script>
 <!--js bootscrap 링크-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
