@@ -31,8 +31,8 @@
 
     <script>
         document.querySelector("#select1").onchange = function () {  //값이 변경됐을 떄
-            let val = this.value;
             let iconElem = document.querySelector("#result1>i"); // dtd
+            let val = this.value;
             val = Number(val)
             switch (val) {
                 case 0:
@@ -46,7 +46,7 @@
                     break;
 
             }
-            iconElem.className+=" fa-solid";
+            iconElem.className+=" fa-solid"; //앞에 띄어쓰기 해주어야함.
         }    
     </script>
     <!--js bootscrap 링크-->
