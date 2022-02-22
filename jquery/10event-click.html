@@ -46,13 +46,20 @@
 
 
         //버튼 1개로 show, hide 실행되게 하기
-        function dis() {
-            if ($('#head1').css('display') == 'none') {
-                $('#head1').show();
-            } else {
-                $('#head1').hide();
-            }
-        }
+        // function dis() {
+        //     if ($('#head1').css('display') == 'none') {
+        //         $('#head1').show();
+        //     } else {
+        //         $('#head1').hide();
+        //     }
+        // }
+        // function dis(){
+        //     $("#head1").toggle();
+        // };
+
+        $("#button1").click(function(){
+            $("#head1").toggle();
+        });
 
         // 글씨 바꾸게 하기
         $('#button1').click(function () {
