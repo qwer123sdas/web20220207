@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        #menu{
+            position : absolute;
+            top:38px;
+            left:0px;
+            background-color:black;
+            color:white;
+        }
+/*  hover사용자가 포인팅 장치를 사용해 상호작용 중인 요소를 선택합니다. 보통 사용자의 커서(마우스 포인터)가 요소 위에 올라가 있으면 선택됩니다. */
+        #menu>.menu-item:hover{   
+            background-color: green;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $("#menu").toggle("slow")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- button#button1.btn.btn-secondary>i.fa-solid.fa-bars -->
+    <button id="button1" class="btn btn-secondary">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- menu -->
+    <!-- #menu>.menu-item*3>lorem1 -->
+    <div id="menu">
+        <div class="menu-item">
+            Lorem.
+        </div>
+        <div class="menu-item">
+            Deleniti.
+        </div>
+        <div class="menu-item">
+            Assumenda?
+        </div>
+    </div>
+
+    <!-- (h1>lorem1^p>lorem)*3 -->
+    <h1>
+        Lorem.
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ex placeat. Cumque ut, tempora sit earum rem in ipsa fugiat accusantium tempore nulla asperiores eum minima nobis quidem, dolore veritatis!
+    </p>
+    <h1>
+        Ex!
+    </h1>
+    <p>
+        Omnis maiores facilis totam, cupiditate hic explicabo nam consequatur maxime numquam rem fugit sequi est quasi doloribus unde odit dolorem at debitis beatae consequuntur! Explicabo animi eligendi ipsa omnis dolore?
+    </p>
+    <h1>
+        Exercitationem.
+    </h1>
+    <p>
+        Ratione numquam, neque totam molestias placeat adipisci ducimus aliquam vero nostrum dignissimos. Iure, pariatur velit deserunt enim fugiat voluptatibus doloremque inventore dolorem voluptates repellat, expedita placeat veritatis quaerat nostrum aspernatur?
+    </p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
