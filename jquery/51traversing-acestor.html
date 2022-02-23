@@ -27,17 +27,14 @@
                 btn.html("<i class='fa-solid fa-minus'></li>");
                 li.append(btn);
 
-                $("button").click(function(){
-                    $(this).parent().remove("li");
+                //삭제기능
+                // $("button").click(function(){
+                btn.click(function(){
+                    $(this).parent().remove();
                 });
-
-
-
-            
-
             });
 
-            //삭제기능
+
 
 
             $("#button2").click(function(){
