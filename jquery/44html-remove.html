@@ -13,17 +13,19 @@
     </style>
     <script>
         $(function(){
+            //글씨 추가 버튼
             $("#button1").click(function(){
                 let val = $("#input1").val();
                 let li = $("<li></li>");
                 li.text(val);
                 $("#list1").append(li);
             });
-
+            //글씨 지우기 버튼
             $("#button2").click(function(){
                 $("li:last-of-type").remove();
             });
 
+            //글씨 클릭하면 지워지기
             // $("li").click(function(){
             //     $(this).remove();
             // });
